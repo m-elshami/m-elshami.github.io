@@ -1,0 +1,110 @@
+<!doctype html>
+<html class="no-js" lang="ar">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>أرشيف شخصي - محمد الشامي</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Place favicon.ico in the root directory -->
+		<link rel="icon" href="computer.ico">
+        <link rel="stylesheet" href="style.css">
+		<script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
+		<script type="module" src="https://unpkg.com/@splinetool/viewer/build/spline-viewer.js"></script>
+		<link rel="stylesheet" href="css/hover-effect.css">
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    </head>
+    <body>
+
+		<!-- password overlay-->
+		<div id="protect-overlay" class="overlay">
+		<h3>3LSHAMI_pwd</h3>
+		<form action="">
+			<button id="passok" type="submit">دخول</button><input id="passinput" name="answer" type="password" placeholder="كلمة المرور هنا"/>
+		</form>
+	  </div>
+
+		<div class="wrapAll clearfix">
+			<div class="sidebar">
+				<div class="logo">
+					<a href="/"><img src='/img/alshamy-logo-gold.png' alt="تخيل لوجو"></a>
+				</div>
+				<div class="navigation">
+					
+					<input size="10" type="text" id="filterBox" placeholder="ابحث هنا" oninput="filterFunction()">
+					<div class="sections">
+					<h3>الرقميات</h3>
+					<ul>
+						<li><sc><a href="/dbs/digitals/links" target="targetframe">روابط</a></sc></li>
+						<li><sc><a href="/dbs/digitals/progs" target="targetframe">برامج</a></sc></li>
+						<li><sc><a href="/dbs/digitals/problems" target="targetframe">مشكلات</a></sc></li>
+						<li><sc><a href="/dbs/digitals/projects" target="targetframe">مشاريع</a></sc></li>
+					</ul>
+					<h3>الترفيه</h3>
+					<ul>
+						<li><sc><a href="/dbs/fun/movies" target="targetframe">افلام</a></sc></li>
+						<li><sc><a href="#">العاب</a></sc></li>
+					</ul>
+					<h3>الملفات</h3>
+					<ul>
+						<li><sc><a href="#">ملفاتي</a></sc></li>
+						<li><sc><a href="https://photos.app.goo.gl/VaVzhLV7AZeJn8TA7">صور</a></sc></li>
+						<li><sc><a href="#">صوتيات</a></sc></li>
+						<li><sc><a href="#">خاص</a></sc></li>
+					</ul>
+					</div>
+				</div>
+			</div>
+			<div class="mainsection">
+				<div class="headerLinks">
+					
+					<a href="#">معلومات شخصية</a> <a href="#">عن الموقع</a><span class="user">محمد الشامي</span>
+				</div>
+				<div class="tabs clearfix">
+					<div class="tabsLeft">
+						<ul>
+							<li><a href="/dbs/private/pages" target="targetframe">القسم الخاص</a></li>				
+						</ul>
+					</div>
+					<div class="tabsRight">
+						<ul>
+							
+							<li><a href="#" target="targetframe">عن الموقع</a></li>
+							<li><a href="#" target="targetframe">احداث</a></li>
+							<li><a href="https://elshami.tiiny.site/" target="targetframe">الصفحة الرئيسية</a></li>
+						</ul>
+					</div>
+				
+				</div>
+				<div class="article">
+					<iframe src="https://elshami.tiiny.site/" id="frame" width="1000" height="500" name="targetframe" allowTransparency="true" scrolling="yes" frameborder="1" fullscreen="no" ></iframe>
+					<div class="articleRight">
+						<div class="articleRightInner">
+							<img src="https://static.vecteezy.com/system/resources/thumbnails/023/482/418/small/update-rubber-stamp-seal-vector.jpg"/>
+						</div>
+					<div class="link-wrapper">
+							<span class="inner-wrapper wrapper-16">
+							<a class="link hover-16" href="">يتم العمل على تحديث للموقع</a>
+							</span>
+					</div>
+					
+				</div>
+
+				<div class="pagefooter">
+					This page was last edited on 14.8.2024
+					<div class="footerlinks">
+						<a href="#">Privacy policy</a> <a href="#">About</a> <a href="#">Terms and conditions</a> <a href="#">Cookie statement</a> <a href="#">Developers</a>
+					</div>
+				</div>
+
+			</div>		
+		</div>
+		
+		
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+		<script src="js/searchbox.js"></script>
+		<script src="script.js"></script>
+		<script src="js/login.js"></script>
+    </body>
+</html>
