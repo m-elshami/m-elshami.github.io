@@ -1,6 +1,6 @@
 (function() {
     var o = document.getElementById('protect-overlay');
-    var pass = atob('M0xTSEFNSV9wd2Q=');
+    //var pass = atob('M0xTSEFNSV9wd2Q=');
     // الحصول على قيمة ملف تعريف الارتباط الخاص بحالة تسجيل الدخول
     var loginStatus = getCookie("loginStatus");
     if (loginStatus === pass) {
@@ -34,6 +34,14 @@ fetch('/.netlify/functions/get-env')
   .catch(error => {
     console.error('Error fetching environment variable:', error);
   });
+exports.handler = async (event, context) => {
+  return {
+    statusCode: 200,
+    body: JSON.stringify({
+      pass: process.env.PASS
+    })
+  };
+};
 // دالة للحصول على قيمة ملف تعريف ارتباط
 function getCookie(cname) {
   var name = cname + "=";
