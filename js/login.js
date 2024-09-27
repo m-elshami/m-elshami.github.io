@@ -24,16 +24,6 @@
         return false;
     };
 })();
-fetch('/.netlify/functions/get-env')
-  .then(response => response.json())
-  .then(data => {
-    const pass = data.pass;
-    // الآن يمكنك استخدام متغير pass في باقي كودك
-    console.log(pass);
-  })
-  .catch(error => {
-    console.error('Error fetching environment variable:', error);
-  });
 exports.handler = async (event, context) => {
   return {
     statusCode: 200,
