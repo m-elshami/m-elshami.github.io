@@ -1,7 +1,7 @@
 (function() {
     var o = document.getElementById('protect-overlay');
     //var pass = atob('M0xTSEFNSV9wd2Q=');
-    var pass = process.env.pass;
+    const pass = process.env.PASS;
     // الحصول على قيمة ملف تعريف الارتباط الخاص بحالة تسجيل الدخول
     var loginStatus = getCookie("loginStatus");
     if (loginStatus === pass) {
