@@ -24,14 +24,6 @@
         return false;
     };
 })();
-exports.handler = async (event, context) => {
-  return {
-    statusCode: 200,
-    body: JSON.stringify({
-      pass: process.env.PASS
-    })
-  };
-};
 // دالة للحصول على قيمة ملف تعريف ارتباط
 function getCookie(cname) {
   var name = cname + "=";
