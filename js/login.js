@@ -24,7 +24,16 @@
         return false;
     };
 })();
-
+fetch('/.netlify/functions/get-env')
+  .then(response => response.json())
+  .then(data => {
+    const pass = data.pass;
+    // الآن يمكنك استخدام متغير pass في باقي كودك
+    console.log(pass);
+  })
+  .catch(error => {
+    console.error('Error fetching environment variable:', error);
+  });
 // دالة للحصول على قيمة ملف تعريف ارتباط
 function getCookie(cname) {
   var name = cname + "=";
