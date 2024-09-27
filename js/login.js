@@ -1,9 +1,9 @@
-exports.handler = async function (event, context) {
-const pass = process.env.pass;
-};
 (function() {
     var o = document.getElementById('protect-overlay');
-    var pass = atob('M0xTSEFNSV9wd2Q=');
+    //var pass = atob('M0xTSEFNSV9wd2Q=');
+    exports.handler = async function (event, context) {
+    const pass = process.env.pass;
+};
 
     // الحصول على قيمة ملف تعريف الارتباط الخاص بحالة تسجيل الدخول
     var loginStatus = getCookie("loginStatus");
