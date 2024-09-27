@@ -1,6 +1,3 @@
-(function() {
-    var o = document.getElementById('protect-overlay');
-    //var pass = atob('M0xTSEFNSV9wd2Q=');
     exports.handler = async (event, context) => {
       return {
         statusCode: 200,
@@ -9,7 +6,9 @@
         })
       };
     };
-    var pass = ${value}
+(function() {
+    var o = document.getElementById('protect-overlay');
+    //var pass = atob('M0xTSEFNSV9wd2Q=');
     // الحصول على قيمة ملف تعريف الارتباط الخاص بحالة تسجيل الدخول
     var loginStatus = getCookie("loginStatus");
 
