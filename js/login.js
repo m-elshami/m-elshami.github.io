@@ -6,7 +6,7 @@
     var loginStatus = getCookie("loginStatus");
     if (loginStatus === pass) {
         // إذا كانت حالة تسجيل الدخول ناجحة، تخطي التحقق من كلمة المرور
-        alert('تم تسجيل الدخول بالفعل');
+        //alert('تم تسجيل الدخول بالفعل');
         o.style.display = "none";
         return false;
     }
