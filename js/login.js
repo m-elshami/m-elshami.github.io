@@ -1,17 +1,16 @@
-exports.handler = async (event, context) => {
-      return {
-        statusCode: 200,
-        body: JSON.stringify({
-          pass: process.env.PASS
-        })
-      };
-    };
 (function() {
     var o = document.getElementById('protect-overlay');
     //var pass = atob('M0xTSEFNSV9wd2Q=');
     // الحصول على قيمة ملف تعريف الارتباط الخاص بحالة تسجيل الدخول
     var loginStatus = getCookie("loginStatus");
-
+      exports.handler = async (event, context) => {
+            return {
+              statusCode: 200,
+              body: JSON.stringify({
+                pass: process.env.PASS
+              })
+            };
+          };
     if (loginStatus === pass) {
         // إذا كانت حالة تسجيل الدخول ناجحة، تخطي التحقق من كلمة المرور
         alert('تم تسجيل الدخول بالفعل');
