@@ -1,3 +1,6 @@
+exports.handler = async function (event, context) {
+const pass = process.env.pass;
+};
 (function() {
     var o = document.getElementById('protect-overlay');
     var pass = atob('M0xTSEFNSV9wd2Q=');
