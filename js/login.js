@@ -1,11 +1,14 @@
 (function() {
     var o = document.getElementById('protect-overlay');
     //var pass = atob('M0xTSEFNSV9wd2Q=');
-    
-    exports.handler = async function (event, context) {
-      const value = process.env.pass;
-
-};
+    exports.handler = async (event, context) => {
+      return {
+        statusCode: 200,
+        body: JSON.stringify({
+          pass: process.env.PASS
+        })
+      };
+    };
     var pass = ${value}
     // الحصول على قيمة ملف تعريف الارتباط الخاص بحالة تسجيل الدخول
     var loginStatus = getCookie("loginStatus");
